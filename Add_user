@@ -1,0 +1,9 @@
+---
+- name: useradd
+  hosts: HOST_NAME
+  
+  tasks:
+    - name: add_user
+      user:
+        name: USER_NAME
+        state: present
